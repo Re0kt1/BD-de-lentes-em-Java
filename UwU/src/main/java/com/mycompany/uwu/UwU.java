@@ -13,6 +13,7 @@ public class UwU {
         l1.setModelo("alta");
         Lente l2 = new Lente();
         l2.setModelo("baixa");
+        l1.aumentarEstoque(1);
         Lentes.add(l1);
         Lentes.add(l2);
         
@@ -20,16 +21,42 @@ public class UwU {
             
         for (Lente i: Lentes) {
             System.out.print(i.getModelo() + " ");
-            System.out.println(i.getEstoque());
+            
+            if (i.getEstoque() == 1){
+                System.out.print(i.getEstoque() + " ");
+                System.out.println("Estoque minimo.");
+            }
+            else {
+                System.out.println(i.getEstoque());
+            }
         }
         
         Cliente c1 = new Cliente();
         
-        System.out.println(l1.getEstoque());
+        System.out.println(l2.getEstoque());
         
-        c1.diminuirEstoque(l1,1);
+        c1.diminuirEstoque(l2,1);
         
-        System.out.println(l1.getEstoque());
+        System.out.println(l2.getEstoque());
+        
+        Lente l3 = new Lente();
+        
+        System.out.println("digite o modelo da lente a ser adicionada.");
+        l3.setModelo(scn.nextLine());
+        Lentes.add(l3);
+        
+        for (Lente i: Lentes) {
+            System.out.print(i.getModelo() + " ");
+            
+            if (i.getEstoque() == 1){
+                System.out.print(i.getEstoque() + " ");
+                System.out.println("Estoque minimo.");
+            }
+            else {
+                System.out.println(i.getEstoque());
+            }
+        }
+        
         /*System.out.println("digite 1 se for querer interagir com uma lente.");
         int y = scn.nextInt();
         scn.nextLine();

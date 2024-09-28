@@ -13,7 +13,7 @@ class Fornecedor extends Lente{
         this.Nome = Nome;
     }
     
-    protected void diminuirEstoque(Lente x, int y) {
-        x.diminuirEstoque(y);
+    protected void aumentarEstoque(Lente x, int y) {
+        x.aumentarEstoque(y);
     }
 }

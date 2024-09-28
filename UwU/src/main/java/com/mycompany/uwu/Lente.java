@@ -20,6 +20,11 @@ class Lente {
     
     protected void diminuirEstoque(int x){
         this.estoque = this.estoque - x;
+        
+        if (this.estoque == 1) {
+            System.out.println("estoque minimo alcançado");
+            this.estoque = this.estoque + 1;
+        }
     }
     
     protected void aumentarEstoque(int x) {

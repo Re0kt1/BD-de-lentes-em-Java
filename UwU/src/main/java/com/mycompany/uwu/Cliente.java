@@ -1,4 +1,6 @@
-package com.mycompany.uwu; 
+
+package com.mycompany.uwu;
+
 
 class Cliente extends Lente{
 
