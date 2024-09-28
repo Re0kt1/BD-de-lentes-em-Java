@@ -1,26 +1,19 @@
 
 package com.mycompany.uwu;
 
-public class Fornecedor extends Lente{
+class Fornecedor extends Lente{
     
     private String Nome;
 
-    /**
-     * Get the value of Nome
-     *
-     * @return the value of Nome
-     */
-    public String getNome() {
+    protected String getNome() {
         return Nome;
     }
 
-    /**
-     * Set the value of Nome
-     *
-     * @param Nome new value of Nome
-     */
-    public void setNome(String Nome) {
+    protected void setNome(String Nome) {
         this.Nome = Nome;
     }
-
+    
+    protected void diminuirEstoque(Lente x, int y) {
+        x.diminuirEstoque(y);
+    }
 }

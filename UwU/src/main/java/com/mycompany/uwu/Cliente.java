@@ -2,17 +2,17 @@
 package com.mycompany.uwu;
 
 
-public class Cliente extends Lente{
+class Cliente extends Lente{
 
-        private String nome;
+    private String nomeCliente;
         
     /**
      * Get the value of nome
      *
      * @return the value of nome
      */
-    public String getNome() {
-        return nome;
+    private String getNome() {
+        return nomeCliente;
     }
 
     /**
@@ -20,7 +20,11 @@ public class Cliente extends Lente{
      *
      * @param nome new value of nome
      */
-    public void setNome(String nome) {
-        this.nome = nome;
+    protected void setNome(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+    
+    protected void diminuirEstoque(Lente x, int y) {
+        x.diminuirEstoque(y);
     }
 }
