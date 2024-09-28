@@ -1,7 +1,4 @@
-a
-package com.mycompany.uwu;
-add.minecraft.exe
-    
+package com.mycompany.uwu; 
 
 class Cliente extends Lente{
 
